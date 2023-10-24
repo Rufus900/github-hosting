@@ -1,0 +1,200 @@
+<div class="main-section">
+  <div class="container">
+    <p>EXPLORER</p>
+    <br>
+    <div class="dropdown">
+      <button class="dropbtn" (click)="toggleMenu()"><span class="editor-icon">⮞</span>OPEN EDITORS</button>
+      <ul class="dropdown-content" *ngIf="isMenuOpen">
+        <li>
+          <a (click)="onHome()"
+            ><img src="../../assets/zjecia/react.png" /> home.jsx</a
+          >
+        </li>
+        <li>
+          <a  (click)="onHTML()"
+            ><img src="../../assets/zjecia/html.png" /> about.html</a
+          >
+        </li>
+        <li>
+          <a  (click)="onCSS()"
+            ><img src="../../assets/zjecia/css.png" /> contact.css</a
+          >
+        </li>
+        <li>
+          <a (click)="onJS()"
+            ><img src="../../assets/zjecia/js.png" /> projects.js</a
+          >
+        </li>
+        <li>
+          <a  (click)="onJSON()"
+            ><img src="../../assets/zjecia/json.png" /> articles.json</a
+          >
+        </li>
+        <li>
+          <a  (click)="onMD()"
+            ><img src="../../assets/zjecia/md.png" /> github.md</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="navbar1">
+    <button class="menu-toggle" (click)="toggleNavbarMenu()">Menu</button>
+    <a [class.selected]="selected === 'home'" (click)="onHome()"
+      ><img src="../../assets/zjecia/react.png" class="jeden" /> home.jsx</a
+    >
+
+    <a [class.selected]="selected === 'html'" (click)="onHTML()"
+      ><img src="../../assets/zjecia/html.png" class="jeden" /> about.html</a
+    >
+
+    <a [class.selected]="selected === 'css'" (click)="onCSS()"
+      ><img src="../../assets/zjecia/css.png" class="jeden" /> contact.css</a
+    >
+
+    <a [class.selected]="selected === 'js'" (click)="onJS()"
+      ><img src="../../assets/zjecia/js.png" class="jeden" /> projects.js</a
+    >
+
+    <a [class.selected]="selected === 'json'" (click)="onJSON()"
+      ><img src="../../assets/zjecia/json.png" class="jeden" /> articles.json</a
+    >
+
+    <a [class.selected]="selected === 'md'" (click)="onMD()"
+      ><img src="../../assets/zjecia/md.png" class="jeden" /> github.md</a
+    >
+    <a [class.selected]="selected === 'settings'" (click)="onSettings()">
+      <img src="../../assets/zjecia/settings.png" class="jeden"/> settings
+
+    </a>
+  
+    <div class="reszta">
+                                            <div class="center-content" *ngIf="selected == 'home'">
+                                            <div>
+                                            <br /><br /><br />
+                                            <h1 class="napisNaTle">I BUILD<br>
+WEBSITES</h1>
+                                            <h1 class="chuj">Jakub Kruczek</h1>
+                                            <p class="pisane"><span>{{ wyswietlanyTekst }}</span></p>
+                                            <div>
+                                              <button class="view">View Work</button>
+                                              <button class="contact">Contact me</button>
+                                            </div>
+                                          </div>
+                                        </div>
+        <div *ngIf="selected == 'html'"> <br>
+                                                            <h1 class="html" style="
+                                                            font-family: 'JetBrains Mono', monospace;
+                                                        " >About Me</h1>
+                                                            <p class="html">Hi, I'm  Jakub  Kruczek Full-Stack Developer, Javascript is my favorite programming language.</p>
+                                                            <p class="html">I'm also a second-year Computer Science student.</p> 
+                                                            <p class="html"> I love taking the challenge and love being part of the solution.</p>
+                                                                <p class="html">My Hobby is keeping myself updated with all the latest technologies & tools</p>
+                                                                <ul>
+                                                                  <li>#Skills</li>
+                                                                  <li>JavaScript</li>
+                                                                    <li>React.js</li>
+                                                                    <li>Angular</li>
+                                                                    <li>Node.js</li>
+                                                                    <li>Express.js</li>
+                                                                    <li>MongoDB</li>
+                                                                    <li>HTML5</li>
+                                                                    <li>CSS3</li>
+                                                                    <li>Bootstrap 4/5</li>
+                                                                    <li>Material UI</li>
+                                                                    <li>Styled-components</li>
+                                                                    <li>Shopify</li>
+                                                                    <li>WordPress</li>
+                                                                </ul>
+                                                          </div>
+
+<div *ngIf="selected=='css'" class="css-content">
+ <div class="lacznik">  <!--  Div co łączy reszte  -->
+  <div class="h3-container">
+  <h1>Reach Out Via Socials</h1>
+  <br>
+  <h3><span class="chuj1">.socials</span> &#123; </h3>
+    <h3 class="wciecie">Email:  <span class="chuj1"> kruczekkuba@onet.pl;</span></h3>
+
+      <h3 class="wciecie">Skype: <span class="chuj1">none;</span></h3>
+<h3 class="wciecie">Github: <span class="chuj1">ZydZLodzi;</span></h3>
+<h3 class="wciecie">Linkedin: <span class="chuj1">ZydZLodzi;</span></h3>
+<h3 class="wciecie">Telegram: <span class="chuj1">@ZydZLodzi;</span></h3>
+<h3 class="wciecie">WhatsApp: <span class="chuj1">+880 1786 079773;</span></h3>
+<h3>&#125;</h3>
+</div>
+
+<div class="form">
+  <h1>Or Fill Out The Form</h1>
+  <div class="top-inputs">
+      <div class="input-container">
+          <label for="input1">NAME</label>
+          <input type="text" id="input1" placeholder="Jan">
+      </div>
+      <div class="input-container">
+          <label for="input2">Email</label>
+          <input type="text" id="input2" placeholder="JanKowalski@onet.pl">
+      </div>
+  </div>
+  <div class="bottom-inputs">
+          <label for="input3">SUBJECT</label>
+          <input type="text" id="input3" placeholder="Type Something">
+          <label for="input4">MESSAGE</label>
+          <input type="text" id="input4" placeholder="Type Something">
+      </div>
+      <button type="submit" class="submit">SUBMIT</button>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div *ngIf="selected == 'settings'">
+  <div class="chujek">
+    <h1>Manage Themes</h1>
+    <div class="color1">
+      <img src="../../assets/zjecia/github-dark.png" alt="">
+      <button (click)="theme1()" class="red">Github Red</button>
+    </div>
+    <div class="color1">
+      <img src="../../assets/zjecia/dracula.png" alt="">
+      <button (click)="theme2()" class="green">Dracula Green</button>
+    </div>
+    <div class="color1">
+      <img src="../../assets/zjecia/ayu.png" alt="">
+    <button (click)="theme3()" class="purple">Ayu Purple</button>
+  </div>
+  <div class="color1">
+    <img src="../../assets/zjecia/ayu.png" alt="">
+    <button (click)="theme4()" class="pink">Ayu Pink</button>
+  </div>
+  <div class="color1">
+    <img src="../../assets/zjecia/nord.png" alt="">
+    <button (click)="theme5()" class="orange">Nord Orange</button>
+  </div>
+  </div>
+  </div>
+  
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+      </div>
+

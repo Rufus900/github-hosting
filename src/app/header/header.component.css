@@ -1,0 +1,71 @@
+a{
+    margin-left: 15px;
+}
+img{
+    margin-left:10px; 
+    max-width: 19px;
+    cursor: pointer;
+}
+.header-class{
+    background-color: #202123;
+    height: 3vh;
+    border: solid 1px black;
+}
+a{
+    color: rgb(197, 191, 191);
+
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.name{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: default;
+    text-align: center;
+}
+.name:hover{
+    cursor: default;
+ 
+}
+.siedem{
+    margin-top: 2px;
+    width:16px;
+float: right;
+text-align: center;
+    
+}
+.siedem:hover{
+    background-color: #e81123;
+    transition: 1s;
+}
+.reszta{
+    margin-top: 2px;
+    width:16px;
+float: right;
+text-align: center;
+margin-right: 10px;
+}
+.reszta:hover{
+    background-color: #c0c0d3;
+    transition: 1s;
+    color: #1f2428;
+}
+body{
+    background-color: var(--tabs-bg);
+  }
+@media screen and (max-width: 1100px){
+    .a{
+        display: none;
+    }
+}
+@media screen and (max-width: 742px){
+.reszta{
+    display: none;
+}
+.siedem{
+    display: none;
+}
+}
