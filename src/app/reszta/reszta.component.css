@@ -142,7 +142,7 @@ h3, h1 {
   height: 100%;
 }
 
-.chuj{
+.dwa{
   margin-left: 2vw;
   font-family: 'Archivo Black', sans-serif;
     font-size: 5em;
@@ -229,12 +229,12 @@ button{
   padding: 0.5rem 1rem;
   font-size: 1.25 rem;
 }
-.chuj1{
+.jeden1{
 color: var(--accent-color);
 cursor: pointer;
 
 }
-.chujek button{
+.jedynka button{
   background-color: var(--accent-color);
 color: white;
 border-radius: 5px;
@@ -242,13 +242,13 @@ height: 3vh;
 width: 7vw;
 border: 2px solid white;
 }
-.chujek{
+.jedynka{
 justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.chujek img{
+.jedynka img{
   height: 100px;
 }
 
